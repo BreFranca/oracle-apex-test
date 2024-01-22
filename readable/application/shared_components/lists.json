@@ -1,0 +1,129 @@
+[
+  {
+    "id":"64022247957804310400"
+   ,"Identification":{
+      "Name":"Navigation Menu"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"64023144230726311473"
+       ,"Label":{
+          "Label":"Home"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-home"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":{
+            "url":"f?p=\u0026APP_ID.:1:\u0026APP_SESSION.::\u0026DEBUG.:::"
+           ,"Page":"1"
+          }
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+      }
+    ]
+  }
+ ,{
+    "id":"64022932937227311304"
+   ,"Identification":{
+      "Name":"Navigation Bar"
+    }
+   ,"Source":{
+      "Type":"Static Values"
+    }
+   ,"Entries":[
+      {
+        "id":"64023145827101311560"
+       ,"Label":{
+          "Label":"\u0026APP_USER."
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-user"
+        }
+       ,"Layout":{
+          "Sequence":10
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"#"
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+         ,"2.":"has-username"
+        }
+      }
+     ,{
+        "id":"64023146155980311560"
+       ,"Label":{
+          "Label":"---"
+        }
+       ,"Layout":{
+          "Sequence":20
+         ,"Parent Entry":"\u0026APP_USER. (64023145827101311560)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"separator"
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Server-side Condition":{
+          "Type":"User is Authenticated (not public)"
+        }
+      }
+     ,{
+        "id":"64023146597900311561"
+       ,"Label":{
+          "Label":"Sign Out"
+        }
+       ,"Icon":{
+          "Image\/Icon CSS Classes":"fa-sign-out"
+        }
+       ,"Layout":{
+          "Sequence":30
+         ,"Parent Entry":"\u0026APP_USER. (64023145827101311560)"
+        }
+       ,"Is Current":{
+          "Type":"Target Page"
+        }
+       ,"Link":{
+          "Target":"\u0026LOGOUT_URL."
+        }
+       ,"Click Counting":{
+          "Count Clicks":false
+        }
+       ,"User Defined Attributes":{
+          "Translatable":false
+        }
+       ,"Server-side Condition":{
+          "Type":"User is Authenticated (not public)"
+        }
+      }
+    ]
+  }
+]

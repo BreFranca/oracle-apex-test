@@ -1,0 +1,18 @@
+[
+  {
+    "id":"64022826711830310866"
+   ,"Identification":{
+      "Name":"Calendar"
+     ,"Identifier":"CALENDAR"
+     ,"Class":"Calendar"
+    }
+   ,"Subscription":{
+      "Master":{
+        "Referenced Id":"4070916747979059326"
+      }
+    }
+   ,"Advanced":{
+      "Translatable":false
+    }
+  }
+]

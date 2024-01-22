@@ -1,0 +1,175 @@
+{
+  "id":"42"
+ ,"Identification":{
+    "Theme Number":42
+   ,"Name":"Universal Theme"
+   ,"Identifier":"UNIVERSAL_THEME"
+  }
+ ,"Navigation":{
+    "Type":"List"
+   ,"Navigation Bar Type":"List"
+  }
+ ,"JavaScript":{
+    "File URLs":[
+      "#APEX_FILES#libraries\/apex\/#MIN_DIRECTORY#widget.stickyWidget#MIN#.js?v=#APEX_VERSION#"
+     ,"#THEME_FILES#js\/theme42#MIN#.js?v=#APEX_VERSION#"
+    ]
+  }
+ ,"CSS":{
+    "File URLs":[
+      "#THEME_FILES#css\/Core#MIN#.css?v=#APEX_VERSION#"
+    ]
+  }
+ ,"Component Defaults":{
+    "Page":"Standard (64022258578256310459)"
+   ,"Navigation Bar List":"Navigation Bar (64022818807455310819)"
+   ,"Navigation Menu List Position":"Side"
+   ,"Navigation Menu List (Top)":"Top Navigation Menu (64022820971941310828)"
+   ,"Navigation Menu List (Side)":"Side Navigation Menu (64022819151270310820)"
+   ,"Login Page":"Login (64022273375176310480)"
+   ,"Error Page":"Login (64022273375176310480)"
+   ,"Printer Friendly Page":"Standard (64022258578256310459)"
+   ,"Breadcrumb":"64022826632453310859"
+   ,"Button":"Text (64022824995643310856)"
+   ,"Legacy Calendar":"Calendar (64022826711830310866)"
+   ,"Default Label":"Optional - Floating (64022822384794310844)"
+   ,"Optional Label":"Optional - Floating (64022822384794310844)"
+   ,"Required Label":"Required - Floating (64022823718735310848)"
+   ,"List":"Links List (64022812212935310797)"
+   ,"Region":"Standard (64022751262660310620)"
+   ,"Classic Report":"Standard (64022787309565310686)"
+  }
+ ,"Region Defaults":{
+    "Breadcrumbs":"Title Bar (64022763838993310634)"
+   ,"Charts":"Standard (64022751262660310620)"
+   ,"Forms":"Standard (64022751262660310620)"
+   ,"Lists":"Standard (64022751262660310620)"
+   ,"Reports":"Standard (64022751262660310620)"
+   ,"Wizards":"Standard (64022751262660310620)"
+   ,"Interactive Reports":"Interactive Report (64022323618481310555)"
+  }
+ ,"Dialog Defaults":{
+    "Dialog Content Region":"Blank with Attributes (64022284235978310507)"
+   ,"Dialog Button Region":"Buttons Container (64022314885440310545)"
+   ,"Dialog Page":"Modal Dialog (64022275981010310484)"
+  }
+ ,"Icons":{
+    "Library":"Font APEX"
+  }
+ ,"Files":{
+    "File Prefix":"#APEX_FILES#themes\/theme_42\/23.1\/"
+  }
+ ,"Styles":[
+    {
+      "id":"64022909186311311238"
+     ,"Identification":{
+        "Name":"Redwood Light"
+      }
+     ,"Settings":{
+        "Is Current":false
+       ,"Is Public":true
+       ,"Accessibility Tested":false
+      }
+     ,"CSS":{
+        "File URLs":[
+          "#APEX_FILES#libraries\/oracle-fonts\/oraclesans-apex#MIN#.css?v=#APEX_VERSION#"
+         ,"#THEME_FILES#css\/Redwood#MIN#.css?v=#APEX_VERSION#"
+        ]
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":true
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Redwood-Theme.less"
+       ,"Output CSS File URL":"#THEME_FILES#css\/Redwood-Theme#MIN#.css?v=#APEX_VERSION#"
+      }
+    }
+   ,{
+      "id":"64022909380984311240"
+     ,"Identification":{
+        "Name":"Vita"
+      }
+     ,"Settings":{
+        "Is Current":false
+       ,"Is Public":true
+       ,"Accessibility Tested":true
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":true
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Vita.less"
+       ,"Output CSS File URL":"#THEME_FILES#css\/Vita#MIN#.css?v=#APEX_VERSION#"
+      }
+    }
+   ,{
+      "id":"64022909592842311240"
+     ,"Identification":{
+        "Name":"Vita - Dark"
+      }
+     ,"Settings":{
+        "Is Current":false
+       ,"Is Public":true
+       ,"Accessibility Tested":false
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":true
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Vita-Dark.less"
+       ,"Output CSS File URL":"#THEME_FILES#css\/Vita-Dark#MIN#.css?v=#APEX_VERSION#"
+      }
+    }
+   ,{
+      "id":"64022909759431311240"
+     ,"Identification":{
+        "Name":"Vita - Red"
+      }
+     ,"Settings":{
+        "Is Current":false
+       ,"Is Public":true
+       ,"Accessibility Tested":false
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":true
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Vita-Red.less"
+       ,"Output CSS File URL":"#THEME_FILES#css\/Vita-Red#MIN#.css?v=#APEX_VERSION#"
+      }
+    }
+   ,{
+      "id":"64022909983215311241"
+     ,"Identification":{
+        "Name":"Vita - Slate"
+      }
+     ,"Settings":{
+        "Is Current":false
+       ,"Is Public":true
+       ,"Accessibility Tested":false
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":true
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Vita-Slate.less"
+       ,"Output CSS File URL":"#THEME_FILES#css\/Vita-Slate#MIN#.css?v=#APEX_VERSION#"
+      }
+    }
+   ,{
+      "id":"64024689535426496675"
+     ,"Identification":{
+        "Name":"Redwood Light (copy_1)"
+      }
+     ,"Settings":{
+        "Is Current":true
+       ,"Is Public":true
+       ,"Accessibility Tested":false
+      }
+     ,"CSS":{
+        "File URLs":[
+          "#APEX_FILES#libraries\/oracle-fonts\/oraclesans-apex#MIN#.css?v=#APEX_VERSION#"
+         ,"#THEME_FILES#css\/Redwood#MIN#.css?v=#APEX_VERSION#"
+        ]
+      }
+     ,"Cascading Style Sheet":{
+        "CSS Classes":" rw-layout--edge-to-edge rw-mode-header--light rw-mode-body-header--light"
+      }
+     ,"Theme Roller Attributes":{
+        "Read Only":false
+       ,"Input Parameter File URLs":"#THEME_FILES#less\/theme\/Redwood-Theme.less"
+       ,"JSON Configuration":"{\"classes\":[\"rw-layout--fixed t-PageBody--scrollTitle\",\"rw-layout--edge-to-edge\",\"rw-mode-header--light\",\"rw-mode-body-header--light\"],\"vars\":{},\"customCSS\":\"\",\"useCustomLess\":\"N\"}"
+      }
+    }
+  ]
+}

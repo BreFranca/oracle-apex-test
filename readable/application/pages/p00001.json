@@ -1,0 +1,831 @@
+{
+  "id":"1"
+ ,"Identification":{
+    "Name":"Home"
+   ,"Alias":"HOME"
+   ,"Title":"QA Application"
+  }
+ ,"Appearance":{
+    "Page Mode":"Normal"
+   ,"Page Template":"Theme Default"
+   ,"Template Options":[
+      "#DEFAULT#"
+    ]
+  }
+ ,"Navigation Menu":{
+    "Override User Interface Level":false
+  }
+ ,"Navigation":{
+    "Cursor Focus":"Do not focus cursor"
+   ,"Warn on Unsaved Changes":true
+  }
+ ,"Security":{
+    "Authentication":"Page Requires Authentication"
+   ,"Deep Linking":"Application Default"
+   ,"Page Access Protection":"Arguments Must Have Checksum"
+   ,"Form Auto Complete":"Off"
+   ,"Browser Cache":"Application Default"
+  }
+ ,"Session Management":{
+    "Rejoin Sessions":"Application Default"
+  }
+ ,"Advanced":{
+    "Enable duplicate page submissions":"Yes - Enable page to be re-posted"
+   ,"Reload on Submit":"Only for Success"
+  }
+ ,"Server Cache":{
+    "Caching":"Disabled"
+  }
+ ,"Regions":[
+    {
+      "id":"64024305309209437378"
+     ,"Identification":{
+        "Title":"Top Products Ordered By Store"
+       ,"Type":"Chart"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (64022751262660310620)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Security":{
+        "Escape special characters":true
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"64024305415590437379"
+       ,"Chart":{
+          "Type":"Area"
+        }
+       ,"Appearance":{
+          "Orientation":"Vertical"
+         ,"Stack":true
+        }
+       ,"Layout":{
+          "Height":400
+        }
+       ,"Data Cursor":{
+          "Cursor":"Yes"
+         ,"Behavior":"Smooth"
+         ,"Dim On Hover":true
+        }
+       ,"Multi-Series Chart Data":{
+          "Fill Gaps in Chart Data":true
+         ,"Sort Order":"Label - Ascending"
+         ,"Render Gap as Zero":true
+        }
+       ,"Settings":{
+          "Zoom and Scroll":"No"
+        }
+       ,"Animation":{
+          "On Display":"Automatic"
+         ,"On Data Change":"Automatic"
+        }
+       ,"Tooltip":{
+          "Show":true
+         ,"Show Series Name":true
+         ,"Show Group Name":true
+         ,"Show Value":true
+        }
+       ,"Legend":{
+          "Show":true
+         ,"Position":"Top"
+         ,"Hide and Show Behavior":"Rescale"
+        }
+       ,"Series":[
+          {
+            "id":"64024305529715437380"
+           ,"Identification":{
+              "Name":"Deli"
+            }
+           ,"Execution":{
+              "Sequence":10
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"select a.product_name, sum(b.quantity)\nfrom eba_demo_chart_products a, eba_demo_chart_orders b\nwhere a.product_id = b.product_id\nand b.customer_id = 1\ngroup by a.product_name"
+            }
+           ,"Column Mapping":{
+              "Label":"PRODUCT_NAME"
+             ,"Value":"SUM(B.QUANTITY)"
+            }
+           ,"Appearance":{
+              "Assigned To Y2 Axis":false
+            }
+           ,"Line":{
+              "Type":"Automatic"
+            }
+           ,"Marker":{
+              "Show":"Automatic"
+             ,"Shape":"Automatic"
+            }
+           ,"Label":{
+              "Show":false
+            }
+          }
+         ,{
+            "id":"64024305841487437383"
+           ,"Identification":{
+              "Name":"Acme Store"
+            }
+           ,"Execution":{
+              "Sequence":20
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"select a.product_name, sum(b.quantity)\nfrom eba_demo_chart_products a, eba_demo_chart_orders b\nwhere a.product_id = b.product_id\nand b.customer_id = 2\ngroup by a.product_name"
+            }
+           ,"Column Mapping":{
+              "Label":"PRODUCT_NAME"
+             ,"Value":"SUM(B.QUANTITY)"
+            }
+           ,"Appearance":{
+              "Assigned To Y2 Axis":false
+            }
+           ,"Line":{
+              "Type":"Automatic"
+            }
+           ,"Marker":{
+              "Show":"Automatic"
+             ,"Shape":"Automatic"
+            }
+           ,"Label":{
+              "Show":false
+            }
+          }
+         ,{
+            "id":"64024305931895437384"
+           ,"Identification":{
+              "Name":"Shop C"
+            }
+           ,"Execution":{
+              "Sequence":30
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"select a.product_name, sum(b.quantity)\nfrom eba_demo_chart_products a, eba_demo_chart_orders b\nwhere a.product_id = b.product_id\nand b.customer_id = 4\ngroup by a.product_name"
+            }
+           ,"Column Mapping":{
+              "Label":"PRODUCT_NAME"
+             ,"Value":"SUM(B.QUANTITY)"
+            }
+           ,"Appearance":{
+              "Assigned To Y2 Axis":false
+            }
+           ,"Line":{
+              "Type":"Automatic"
+            }
+           ,"Marker":{
+              "Show":"Automatic"
+             ,"Shape":"Automatic"
+            }
+           ,"Label":{
+              "Show":false
+            }
+          }
+         ,{
+            "id":"64024307879144437404"
+           ,"Identification":{
+              "Name":"Store A"
+            }
+           ,"Execution":{
+              "Sequence":40
+            }
+           ,"Source":{
+              "Location":"Local Database"
+             ,"Type":"SQL Query"
+             ,"SQL Query":"select a.product_name, sum(b.quantity)\nfrom eba_demo_chart_products a, eba_demo_chart_orders b\nwhere a.product_id = b.product_id\nand b.customer_id = 3\ngroup by a.product_name"
+            }
+           ,"Column Mapping":{
+              "Label":"PRODUCT_NAME"
+             ,"Value":"SUM(B.QUANTITY)"
+            }
+           ,"Appearance":{
+              "Assigned To Y2 Axis":false
+            }
+           ,"Line":{
+              "Type":"Automatic"
+            }
+           ,"Marker":{
+              "Show":"Automatic"
+             ,"Shape":"Automatic"
+            }
+           ,"Label":{
+              "Show":false
+            }
+          }
+        ]
+       ,"Axes":[
+          {
+            "id":"64024305640919437381"
+           ,"Identification":{
+              "Name":"x"
+             ,"Show Axis":true
+            }
+           ,"Value":{
+              "Format Scaling":"Automatic"
+             ,"Baseline Scaling":"Zero"
+             ,"Scale":"Linear"
+            }
+           ,"Major Ticks":{
+              "Show":"Yes"
+            }
+           ,"Minor Ticks":{
+              "Show":false
+            }
+           ,"Tick Label":{
+              "Show":true
+             ,"Rotation":true
+             ,"Position":"Outside"
+            }
+          }
+         ,{
+            "id":"64024305652894437382"
+           ,"Identification":{
+              "Name":"y"
+             ,"Show Axis":true
+            }
+           ,"Value":{
+              "Format":"Decimal"
+             ,"Decimal Places":0
+             ,"Format Scaling":"None"
+             ,"Baseline Scaling":"Zero"
+             ,"Scale":"Linear"
+            }
+           ,"Appearance":{
+              "Position":"Automatic"
+            }
+           ,"Major Ticks":{
+              "Show":"Yes"
+            }
+           ,"Minor Ticks":{
+              "Show":false
+            }
+           ,"Tick Label":{
+              "Show":true
+            }
+          }
+        ]
+      }
+    }
+   ,{
+      "id":"64024306133523437386"
+     ,"Identification":{
+        "Title":"Orders"
+       ,"Type":"Interactive Grid"
+      }
+     ,"Source":{
+        "Location":"Local Database"
+       ,"Type":"SQL Query"
+       ,"SQL Query":"select a.PRODUCT_NAME,\n       a.product_id,\n       b.quantity, \n       b.customer_id,\n       b.order_id\n  from EBA_DEMO_CHART_PRODUCTS a,\n        eba_demo_chart_orders b\nwhere a.product_id = b.product_id;"
+      }
+     ,"Layout":{
+        "Sequence":20
+       ,"Parent Region":"No Parent"
+       ,"Position":"BODY"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Interactive Report (64022323618481310555)"
+       ,"Template Options":[
+          "#DEFAULT#"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "id":"64024306187549437387"
+       ,"Edit":{
+          "Enabled":true
+         ,"Allowed Operations":[
+            "Add Row"
+           ,"Update Row"
+           ,"Delete Row"
+          ]
+         ,"Lost Update Type":"Row Values"
+         ,"Add Row If Empty":true
+        }
+       ,"Performance":{
+          "Lazy Loading":true
+        }
+       ,"Appearance":{
+          "Select First Row":true
+         ,"Fixed Row Height":true
+        }
+       ,"Pagination":{
+          "Type":"Page"
+         ,"Show Total Count":true
+        }
+       ,"Toolbar":{
+          "Show":false
+        }
+       ,"Enable Users To":{
+          "Save Public Report":false
+         ,"Flashback":true
+         ,"Define Chart View":true
+         ,"Download":true
+        }
+       ,"Download":{
+          "Formats":[
+            "CSV"
+           ,"HTML"
+           ,"Excel"
+           ,"PDF"
+          ]
+         ,"Send as Email":true
+        }
+       ,"Heading":{
+          "Fixed To":"Page"
+        }
+       ,"Icon View":{
+          "Show":false
+        }
+       ,"Detail View":{
+          "Show":false
+        }
+       ,"Saved Reports":[
+          {
+            "id":"64024605832831469173"
+           ,"Identification":{
+              "Name":"Primary Report"
+             ,"Alias":"21462158"
+            }
+          }
+        ]
+      }
+     ,"Columns":[
+        {
+          "id":"64024306427948437389"
+         ,"Identification":{
+            "Column Name":"PRODUCT_NAME"
+           ,"Type":"Display Only"
+          }
+         ,"Heading":{
+            "Heading":"Product Name"
+           ,"Alignment":"start"
+          }
+         ,"Settings":{
+            "Format":"Plain Text"
+           ,"Based On":"Item Value"
+          }
+         ,"Layout":{
+            "Sequence":40
+           ,"Column Alignment":"start"
+           ,"Stretch":"Use Report Setting"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Source":{
+            "Type":"Database Column"
+           ,"Database Column":"PRODUCT_NAME"
+           ,"Data Type":"VARCHAR2"
+           ,"Query Only":false
+           ,"Primary Key":false
+          }
+         ,"Default":{
+            "Duplicate Copies Existing Value":true
+          }
+         ,"Session State":{
+            "Data Type":"VARCHAR2"
+          }
+         ,"Column Filter":{
+            "Enabled":true
+           ,"Performance Impacting Operators":[
+              "Contains"
+             ,"Starts With"
+             ,"Case Insensitive"
+             ,"Regular Expression"
+            ]
+           ,"Text Case":"Mixed"
+           ,"LOV Type":"Use List of Values"
+           ,"Exact Match":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Enable Users To":{
+            "Sort":true
+           ,"Control Break\/Aggregate":true
+           ,"Hide":true
+          }
+        }
+       ,{
+          "id":"64024307129082437396"
+         ,"Identification":{
+            "Column Name":"APEX$ROW_ACTION"
+           ,"Type":"Actions Menu"
+          }
+         ,"Layout":{
+            "Sequence":20
+          }
+        }
+       ,{
+          "id":"64024307216923437397"
+         ,"Identification":{
+            "Column Name":"APEX$ROW_SELECTOR"
+           ,"Type":"Row Selector"
+          }
+         ,"Settings":{
+            "Enable Multi Select":true
+           ,"Show Select All":true
+           ,"Hide Control":false
+          }
+         ,"Layout":{
+            "Sequence":10
+          }
+        }
+       ,{
+          "id":"64024307382541437399"
+         ,"Identification":{
+            "Column Name":"QUANTITY"
+           ,"Type":"Number Field"
+          }
+         ,"Heading":{
+            "Heading":"Quantity"
+           ,"Alignment":"end"
+          }
+         ,"Settings":{
+            "Number Alignment":"Start"
+           ,"Virtual Keyboard":"Decimal"
+          }
+         ,"Layout":{
+            "Sequence":60
+           ,"Column Alignment":"end"
+           ,"Stretch":"Use Report Setting"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Validation":{
+            "Value Required":false
+          }
+         ,"Source":{
+            "Type":"Database Column"
+           ,"Database Column":"QUANTITY"
+           ,"Data Type":"NUMBER"
+           ,"Query Only":false
+           ,"Primary Key":false
+          }
+         ,"Default":{
+            "Duplicate Copies Existing Value":true
+          }
+         ,"Column Filter":{
+            "Enabled":true
+           ,"LOV Type":"None"
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Enable Users To":{
+            "Sort":true
+           ,"Control Break\/Aggregate":true
+           ,"Hide":true
+          }
+        }
+       ,{
+          "id":"64024307692843437402"
+         ,"Identification":{
+            "Column Name":"PRODUCT_ID"
+           ,"Type":"Hidden"
+          }
+         ,"Settings":{
+            "Value Protected":false
+          }
+         ,"Layout":{
+            "Sequence":30
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Source":{
+            "Type":"Database Column"
+           ,"Database Column":"PRODUCT_ID"
+           ,"Data Type":"NUMBER"
+           ,"Query Only":false
+           ,"Primary Key":false
+          }
+         ,"Default":{
+            "Duplicate Copies Existing Value":true
+          }
+         ,"Session State":{
+            "Data Type":"VARCHAR2"
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":false
+          }
+         ,"Enable Users To":{
+            "Sort":false
+          }
+        }
+       ,{
+          "id":"64024307823901437403"
+         ,"Identification":{
+            "Column Name":"CUSTOMER_ID"
+           ,"Type":"Popup LOV"
+          }
+         ,"Heading":{
+            "Heading":"Customer"
+           ,"Alignment":"start"
+          }
+         ,"Settings":{
+            "Display As":"Modal Dialog"
+           ,"Initial Fetch":"Automatic"
+           ,"Multiple Values":false
+           ,"Manual Entry":false
+           ,"Search as You Type":false
+          }
+         ,"Layout":{
+            "Sequence":70
+           ,"Column Alignment":"start"
+           ,"Stretch":"Use Report Setting"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Validation":{
+            "Value Required":false
+          }
+         ,"List of Values":{
+            "Type":"SQL Query"
+           ,"SQL Query":"select customer, customer_id from eba_demo_customer"
+           ,"Display Extra Values":true
+           ,"Display Null Value":true
+          }
+         ,"Source":{
+            "Type":"Database Column"
+           ,"Database Column":"CUSTOMER_ID"
+           ,"Data Type":"NUMBER"
+           ,"Query Only":false
+           ,"Primary Key":false
+          }
+         ,"Default":{
+            "Duplicate Copies Existing Value":true
+          }
+         ,"Column Filter":{
+            "Enabled":true
+           ,"Performance Impacting Operators":[
+              "Contains"
+             ,"Starts With"
+             ,"Case Insensitive"
+             ,"Regular Expression"
+            ]
+           ,"Text Case":"Mixed"
+           ,"LOV Type":"Use List of Values"
+           ,"Exact Match":true
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":true
+          }
+         ,"Enable Users To":{
+            "Sort":true
+           ,"Control Break\/Aggregate":true
+           ,"Hide":true
+          }
+        }
+       ,{
+          "id":"64024308076285437406"
+         ,"Identification":{
+            "Column Name":"ORDER_ID"
+           ,"Type":"Display Only"
+          }
+         ,"Heading":{
+            "Heading":"Order"
+           ,"Alignment":"start"
+          }
+         ,"Settings":{
+            "Format":"Plain Text"
+           ,"Based On":"Item Value"
+          }
+         ,"Layout":{
+            "Sequence":80
+           ,"Column Alignment":"center"
+           ,"Stretch":"Use Report Setting"
+          }
+         ,"Accessibility":{
+            "Value Identifies Row":false
+          }
+         ,"Source":{
+            "Type":"Database Column"
+           ,"Database Column":"ORDER_ID"
+           ,"Data Type":"NUMBER"
+           ,"Query Only":false
+           ,"Primary Key":true
+          }
+         ,"Default":{
+            "Duplicate Copies Existing Value":true
+          }
+         ,"Session State":{
+            "Data Type":"VARCHAR2"
+          }
+         ,"Column Filter":{
+            "Enabled":true
+           ,"LOV Type":"Distinct Column"
+          }
+         ,"Export \/ Printing":{
+            "Include In Export \/ Print":false
+          }
+         ,"Enable Users To":{
+            "Sort":false
+           ,"Hide":true
+          }
+        }
+      ]
+     ,"Printing":{
+        "Page":{
+          "Size":"Letter"
+         ,"Orientation":"Landscape"
+         ,"Units":"Inches"
+         ,"Width":11
+         ,"Height":8.5
+         ,"Border Width":0.5
+         ,"Border Color":"#666666"
+        }
+       ,"Page Header":{
+          "Font":"Helvetica"
+         ,"Font Weight":"Normal"
+         ,"Font Size":12
+         ,"Font Color":"#000000"
+         ,"Alignment":"center"
+         ,"Page Header Text":"Orders"
+        }
+       ,"Column Headings":{
+          "Font":"Helvetica"
+         ,"Font Weight":"Bold"
+         ,"Font Size":10
+         ,"Font Color":"#000000"
+         ,"Background Color":"#EEEEEE"
+        }
+       ,"Columns":{
+          "Font":"Helvetica"
+         ,"Font Weight":"Normal"
+         ,"Font Size":10
+         ,"Font Color":"#000000"
+         ,"Background Color":"#FFFFFF"
+        }
+       ,"Page Footer":{
+          "Font":"Helvetica"
+         ,"Font Weight":"Normal"
+         ,"Font Size":12
+         ,"Font Color":"#000000"
+         ,"Alignment":"center"
+        }
+      }
+    }
+   ,{
+      "id":"64024308200168437407"
+     ,"Identification":{
+        "Title":"New"
+       ,"Type":"Static Content"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Parent Region":"No Parent"
+       ,"Position":"REGION_POSITION_05"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Template":"Standard (64022751262660310620)"
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Region--noPadding"
+         ,"t-Region--removeHeader js-removeLandmark"
+         ,"t-Region--noUI"
+         ,"t-Region--scrollBody"
+        ]
+       ,"Render Components":"Above Content"
+      }
+     ,"Accessibility":{
+        "Use Landmark":true
+       ,"Landmark Type":"Template Default"
+      }
+     ,"Advanced":{
+        "Region Display Selector":false
+       ,"Exclude Title from Translation":false
+      }
+     ,"Server Cache":{
+        "Caching":"Disabled"
+      }
+     ,"Customization":{
+        "Customizable":"Not Customizable By End Users"
+      }
+     ,"Attributes":{
+        "Settings":{
+          "Output As":"HTML"
+         ,"Expand Shortcuts":false
+        }
+      }
+    }
+  ]
+ ,"Buttons":[
+    {
+      "id":"64024308339243437408"
+     ,"Identification":{
+        "Button Name":"Save"
+       ,"Label":"Save"
+      }
+     ,"Layout":{
+        "Sequence":10
+       ,"Region":"New (64024308200168437407)"
+       ,"Position":"CREATE"
+       ,"Start New Layout":false
+       ,"Start New Row":true
+       ,"Column":"Automatic"
+       ,"New Column":true
+       ,"Column Span":"Automatic"
+      }
+     ,"Appearance":{
+        "Button Template":"Text with Icon (64022825068034310856)"
+       ,"Hot":true
+       ,"Template Options":[
+          "#DEFAULT#"
+         ,"t-Button--iconLeft"
+        ]
+       ,"Icon":"fa-save"
+      }
+     ,"Behavior":{
+        "Action":"Submit Page"
+       ,"Execute Validations":true
+       ,"Warn on Unsaved Changes":"Do Not Check"
+      }
+    }
+  ]
+ ,"Processes":[
+    {
+      "id":"64024307294739437398"
+     ,"Identification":{
+        "Name":"Products - Save Interactive Grid Data"
+       ,"Type":"Interactive Grid - Automatic Row Processing (DML)"
+       ,"Execution Chain":"None"
+       ,"Editable Region":"Orders (64024306133523437386)"
+      }
+     ,"Settings":{
+        "Target Type":"PL\/SQL Code"
+       ,"PL\/SQL Code to Insert\/Update\/Delete":"update eba_demo_chart_orders \nset quantity = :QUANTITY, \ncustomer_id = :CUSTOMER_ID \nwhere order_id = :ORDER_ID;"
+       ,"Prevent Lost Updates":false
+       ,"Lock Row":"No"
+      }
+     ,"Execution":{
+        "Sequence":10
+       ,"Point":"Processing"
+       ,"Run Process":"Once Per Page Visit (default)"
+      }
+     ,"Error":{
+        "Display Location":"Inline in Notification"
+      }
+     ,"Server-side Condition":{
+        "Execution Scope":"For Created and Modified Rows"
+      }
+    }
+  ]
+}
